@@ -8,15 +8,19 @@ Mailbox is an innovative take on the postal service application that will help y
 This is full app design preview. (Not final version | 10.11.2023)
 
 ### Account
+<div align="center" style="margin: 30px;">
 <img height="400" src="https://github.com/ialexballa/Mailbox/blob/main/Demo/Account/LogIn.png" alt="LogIn">
 <img height="400" src="https://github.com/ialexballa/Mailbox/blob/main/Demo/Account/SignUp.png" alt="SignUp">
+</div>
 
 ### Email
 <img height="400" src="https://github.com/ialexballa/Mailbox/blob/main/Demo/Email/EmailPreview.png" alt="Email">
 
 ### Send Email
+<div align="center" style="margin: 30px;">
 <img height="400" src="https://github.com/ialexballa/Mailbox/blob/main/Demo/SendEmail/SimpleEmail.png" alt="Send email">
 <img height="400" src="https://github.com/ialexballa/Mailbox/blob/main/Demo/SendEmail/AssignFiles.png" alt="Assign photos">
+</div>
 
 ## Features
 
@@ -30,9 +34,11 @@ This is full app design preview. (Not final version | 10.11.2023)
 
 
 ## Authors
-Creator/ Head Dev
+Creator/ Head Dev'
+
 - [@ialexballa](https://github.com/ialexballa)
-Co-worker/ Helper
+  
+Co-worker/ Helper'
 - [@beaxhem](https://github.com/beaxhem)
 
 
