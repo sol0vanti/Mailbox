@@ -1,9 +1,6 @@
 
 # Mailbox
 
-Mailbox is an innovative take on the postal service application that will help you stay accessible at all times.
-
-
 ## Preview
 This is full app design preview | 10.11.2023
 
