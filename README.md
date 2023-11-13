@@ -5,7 +5,7 @@ Mailbox is an innovative take on the postal service application that will help y
 
 * [Features](#Features)
 * [Authors](#Authors)
-* [License](#Licensen)
+* [License](#License)
 * [Deployment](#Deployment)
 * [Gallery](#Preview)
 
