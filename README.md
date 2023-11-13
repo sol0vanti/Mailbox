@@ -1,6 +1,14 @@
 
 # Mailbox
 
+Mailbox is an innovative take on the postal service application that will help you stay accessible at all times.
+
+* [Features](#Features)
+* [Authors](#Authors)
+* [License](#Licensen)
+* [Deployment](#Deployment)
+* [Gallery](#Preview)
+
 ## Features
 
 - Light/dark mode toggle
@@ -15,10 +23,10 @@
 ## Authors
 Creator/ Head Dev'
 
-- [@aiexxash](https://github.com/aiexxash)
+- [Alexandre Balla](https://github.com/aiexxash)
   
 Co-worker/ Helper'
-- [@beaxhem](https://github.com/beaxhem)
+- [Illia Senchukov](https://github.com/beaxhem)
 
 
 ## License
@@ -51,6 +59,10 @@ This project is saved online on public GitHub repository.
 ```bash
   Built with love. Enjoy it!
 ```
+
+## Contibution
+
+If you have any ideas of how to improve the program, feel free to add new issues on *Issues page* or you can also create pull requests on *Pull Requests page*.
 
 ## Preview
 This is full app design preview | 10.11.2023
