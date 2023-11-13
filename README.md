@@ -34,6 +34,8 @@ Co-worker/ Helper'
 
 [MIT License](https://choosealicense.com/licenses/mit/)
 
+Copyright (c) 2023 Alexander Balla
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
