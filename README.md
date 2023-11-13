@@ -1,24 +1,6 @@
 
 # Mailbox
 
-## Preview
-This is full app design preview | 10.11.2023
-
-### Account
-<div align="left" style="margin: 50px;">
-<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Account/LogIn.png" alt="LogIn">
-<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Account/SignUp.png" alt="SignUp">
-</div>
-
-### Email
-<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Email/EmailPreview.png" alt="Email">
-
-### Send Email
-<div align="left" style="margin: 50px;">
-<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/SendEmail/SimpleEmail.png" alt="Send email">
-<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/SendEmail/AssignFiles.png" alt="Assign photos">
-</div>
-
 ## Features
 
 - Light/dark mode toggle
@@ -69,4 +51,22 @@ This project is saved online on public GitHub repository.
 ```bash
   Built with love. Enjoy it!
 ```
+
+## Preview
+This is full app design preview | 10.11.2023
+
+### Account
+<div align="left" style="margin: 50px;">
+<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Account/LogIn.png" alt="LogIn">
+<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Account/SignUp.png" alt="SignUp">
+</div>
+
+### Email
+<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Email/EmailPreview.png" alt="Email">
+
+### Send Email
+<div align="left" style="margin: 50px;">
+<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/SendEmail/SimpleEmail.png" alt="Send email">
+<img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/SendEmail/AssignFiles.png" alt="Assign photos">
+</div>
 
