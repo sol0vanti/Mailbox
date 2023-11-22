@@ -16,13 +16,11 @@ struct Helping {
                 return "Refill the highlighted text fields."
             }
         }
-        
         guard confirmationField != nil else { return nil }
         
         if confirmationField?.text != passwordTextField?.text {
             return "Your password does not match two times, please try again later"
         }
-        
         return nil
     }
 }

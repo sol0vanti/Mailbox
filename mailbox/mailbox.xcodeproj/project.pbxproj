@@ -47,6 +47,7 @@
 		70AF62312AEE6FCF0018AC03 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 70AF62302AEE6FCF0018AC03 /* FirebaseRemoteConfigSwift */; };
 		70AF62332AEE6FCF0018AC03 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 70AF62322AEE6FCF0018AC03 /* FirebaseStorage */; };
 		70AF62352AEE6FCF0018AC03 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 70AF62342AEE6FCF0018AC03 /* FirebaseStorageCombine-Community */; };
+		70C9DFAD2B0E9BBC0021E51A /* EmailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C9DFAC2B0E9BBC0021E51A /* EmailDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		7071559A2AF41E9E0044DC9F /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
 		7071559C2AF4201C0044DC9F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		70AF61FB2AEE6EDA0018AC03 /* Helping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helping.swift; sourceTree = "<group>"; };
+		70C9DFAC2B0E9BBC0021E51A /* EmailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 			children = (
 				700B48472AEBF95000B0FBD5 /* EmailViewController.swift */,
 				7071559A2AF41E9E0044DC9F /* EmailTableViewCell.swift */,
+				70C9DFAC2B0E9BBC0021E51A /* EmailDetailViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				700B482E2AEBF28D00B0FBD5 /* SceneDelegate.swift in Sources */,
 				7071559B2AF41E9E0044DC9F /* EmailTableViewCell.swift in Sources */,
 				7071559D2AF4201C0044DC9F /* Request.swift in Sources */,
+				70C9DFAD2B0E9BBC0021E51A /* EmailDetailViewController.swift in Sources */,
 				700B48482AEBF95000B0FBD5 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

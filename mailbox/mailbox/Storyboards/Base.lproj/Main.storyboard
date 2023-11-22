@@ -330,6 +330,12 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 file attached*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtO-jp-ldo">
+                                <rect key="frame" x="142.33333333333334" y="769.33333333333337" width="108.66666666666666" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJC-gy-3dB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -340,12 +346,14 @@
                             <constraint firstItem="S18-zD-S3a" firstAttribute="top" secondItem="bJC-gy-3dB" secondAttribute="top" id="9hF-FM-fRV"/>
                             <constraint firstItem="bJC-gy-3dB" firstAttribute="trailing" secondItem="dah-AI-z1Y" secondAttribute="trailing" id="HoG-s7-pnR"/>
                             <constraint firstItem="bJC-gy-3dB" firstAttribute="bottom" secondItem="6gA-T2-XOG" secondAttribute="bottom" id="J75-aP-hjI"/>
+                            <constraint firstItem="6gA-T2-XOG" firstAttribute="top" secondItem="UtO-jp-ldo" secondAttribute="bottom" constant="10" id="NR0-oI-1rt"/>
                             <constraint firstItem="fGP-mL-0NX" firstAttribute="top" secondItem="S18-zD-S3a" secondAttribute="bottom" id="THF-p1-nph"/>
                             <constraint firstItem="Syf-5y-dCC" firstAttribute="leading" secondItem="bJC-gy-3dB" secondAttribute="leading" constant="20" id="Vh7-r0-pUr"/>
                             <constraint firstItem="fGP-mL-0NX" firstAttribute="trailing" secondItem="bJC-gy-3dB" secondAttribute="trailing" id="hCO-wM-60i"/>
                             <constraint firstItem="S18-zD-S3a" firstAttribute="leading" secondItem="bJC-gy-3dB" secondAttribute="leading" id="m67-fN-FPw"/>
                             <constraint firstItem="dah-AI-z1Y" firstAttribute="leading" secondItem="bJC-gy-3dB" secondAttribute="leading" id="qQ1-zj-oct"/>
                             <constraint firstItem="Syf-5y-dCC" firstAttribute="top" secondItem="dah-AI-z1Y" secondAttribute="bottom" constant="10" id="rTb-rw-sTt"/>
+                            <constraint firstItem="UtO-jp-ldo" firstAttribute="centerX" secondItem="ktB-7h-qj6" secondAttribute="centerX" id="tRx-ZV-AJa"/>
                             <constraint firstItem="fGP-mL-0NX" firstAttribute="leading" secondItem="bJC-gy-3dB" secondAttribute="leading" id="uQx-2d-3cL"/>
                             <constraint firstItem="dah-AI-z1Y" firstAttribute="top" secondItem="fGP-mL-0NX" secondAttribute="bottom" id="vDe-pg-4yB"/>
                         </constraints>
@@ -353,6 +361,7 @@
                     <navigationItem key="navigationItem" title="Send Email" id="P6N-Bw-Lci"/>
                     <connections>
                         <outlet property="addFileButton" destination="Syf-5y-dCC" id="wAQ-mQ-80u"/>
+                        <outlet property="attachedFilesLabel" destination="UtO-jp-ldo" id="Tht-cu-0cd"/>
                         <outlet property="errorLabel" destination="6gA-T2-XOG" id="feD-Vr-0aG"/>
                         <outlet property="textView" destination="dah-AI-z1Y" id="Erv-wV-LSR"/>
                         <outlet property="titleTextField" destination="fGP-mL-0NX" id="9a7-ZP-Z1l"/>
@@ -361,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHp-Y6-DIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2941.2213740458014" y="703.52112676056345"/>
+            <point key="canvasLocation" x="2856" y="704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="drh-BK-xP4">
@@ -459,6 +468,50 @@
             </objects>
             <point key="canvasLocation" x="2856" y="-2"/>
         </scene>
+        <!--Cтесняшка-->
+        <scene sceneID="5UV-8X-P7t">
+            <objects>
+                <viewController storyboardIdentifier="EmailDetailViewController" id="i47-oi-T1q" customClass="EmailDetailViewController" customModule="mailbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s29-0F-mn1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From: ronny@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvr-nL-5k3">
+                                <rect key="frame" x="20" y="108" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vuj-jV-ky4">
+                                <rect key="frame" x="20" y="144" width="353" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7nv-nH-exQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7nv-nH-exQ" firstAttribute="bottom" secondItem="Vuj-jV-ky4" secondAttribute="bottom" constant="20" id="4Er-KZ-VJe"/>
+                            <constraint firstItem="7nv-nH-exQ" firstAttribute="trailing" secondItem="Vuj-jV-ky4" secondAttribute="trailing" constant="20" id="XVu-DZ-OQH"/>
+                            <constraint firstItem="mvr-nL-5k3" firstAttribute="top" secondItem="7nv-nH-exQ" secondAttribute="top" constant="5" id="qlh-qP-bjq"/>
+                            <constraint firstItem="mvr-nL-5k3" firstAttribute="leading" secondItem="7nv-nH-exQ" secondAttribute="leading" constant="20" id="qmM-Rh-c4n"/>
+                            <constraint firstItem="Vuj-jV-ky4" firstAttribute="top" secondItem="mvr-nL-5k3" secondAttribute="bottom" constant="15" id="qmU-gR-39s"/>
+                            <constraint firstItem="Vuj-jV-ky4" firstAttribute="leading" secondItem="7nv-nH-exQ" secondAttribute="leading" constant="20" id="tKZ-Jb-Z8H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cтесняшка" id="fuy-13-bzg"/>
+                    <connections>
+                        <outlet property="fromLabel" destination="mvr-nL-5k3" id="s14-7c-gKI"/>
+                        <outlet property="textView" destination="Vuj-jV-ky4" id="prQ-TB-kIt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZd-Qa-evs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4400.7633587786258" y="-2.1126760563380285"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mfB-Fq-nJ6">
             <objects>
@@ -493,7 +546,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMo-O3-HHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2014.5038167938931" y="703.52112676056345"/>
+            <point key="canvasLocation" x="2015" y="704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="95q-22-Khs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fsP-Mu-LeU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4b-Wd-rlj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i47-oi-T1q" kind="relationship" relationship="rootViewController" id="jGs-T8-egy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ize-B4-Eyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3686" y="-2"/>
         </scene>
     </scenes>
     <resources>
@@ -504,16 +575,16 @@
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

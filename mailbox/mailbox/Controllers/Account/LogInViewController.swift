@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  mailbox
-//
-//  Created by Alex Balla on 27.10.2023.
-//
-
 import UIKit
 import FirebaseAuth
 import Firebase
@@ -56,4 +49,3 @@ class LogInViewController: UIViewController {
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
 }
-

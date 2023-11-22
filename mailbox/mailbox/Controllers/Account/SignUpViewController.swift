@@ -1,10 +1,3 @@
-//
-//  SignUpViewController.swift
-//  mailbox
-//
-//  Created by Alex Balla on 27.10.2023.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
@@ -22,9 +15,9 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .link
     }
+    
     @IBAction func signButtonClicked(_ sender: UIButton) {
         let error = Helping.checkTextFields(errorLabel: errorLabel, textFields: [emailTextField], confirmationField: passwordConfirmTextField, passwordTextField: passwordTextField)
-
         guard error == nil else {
             Helping.showError(text: error!, label: errorLabel, textFields: [emailTextField, passwordTextField, passwordConfirmTextField])
             return
@@ -36,9 +29,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             if err != nil {
                 Helping.showError(text: "Error creating user", label: self.errorLabel, textFields: [])
-            }
-            
-            else {
+            } else {
                 self.defaults.set(self.emailTextField.text!, forKey: "email")
                 let db = Firestore.firestore()
                 
@@ -56,6 +47,7 @@ class SignUpViewController: UIViewController {
             }
         }
     }
+    
     @IBAction func logButtonClicked(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }

@@ -1,16 +1,9 @@
-//
-//  MailViewController.swift
-//  mailbox
-//
-//  Created by Alex Balla on 27.10.2023.
-//
-
 import UIKit
 import Firebase
 
 class EmailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let defaults = UserDefaults.standard
     @IBOutlet weak var table: UITableView!
+    let defaults = UserDefaults.standard
     var requests: [Request]!
     var indexPath: IndexPath!
     
@@ -21,14 +14,10 @@ class EmailViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         getData()
-        
         table.delegate = self
         table.dataSource = self
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Send", image: UIImage(systemName: "plus.circle.fill"), target: self, action: #selector(sendButtonClicked))
-        
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Profile", image: UIImage(systemName: "person.circle.fill"), target: self, action: #selector(profileButtonClicked))
     }
     
@@ -78,6 +67,12 @@ class EmailViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let request = requests[indexPath.row]
+        let destVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "EmailDetailViewController") as! EmailDetailViewController
+        destVC.emailFrom = request.user
+        destVC.emailTitle = request.title
+        destVC.emailText = request.message
+        self.navigationController?.pushViewController(destVC, animated: true)
         return tableView.deselectRow(at: indexPath, animated: true)
     }
     
