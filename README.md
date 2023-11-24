@@ -1,3 +1,4 @@
+> Great news! Mailbox email system is now in public beta! Join us in the Mailbox today! ☁️🎉
 
 # Mailbox
 
