@@ -4,6 +4,7 @@
 <p align="center">
     <br />
     <br />
+    <h1>Mailbox Email System</h1>
     <b>Mailbox is an innovative take on the postal service application that will help you stay accessible at all times.</b>
     <br />
     <br />
