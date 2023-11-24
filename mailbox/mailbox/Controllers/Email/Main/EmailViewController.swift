@@ -29,12 +29,10 @@ class EmailViewController: UIViewController, UITableViewDataSource, UITableViewD
             } else {
                 if let snapshot = snapshot {
                     DispatchQueue.main.async {
-                        print(self.defaults.string(forKey: "email")!)
                         self.requests = snapshot.documents.map { d in
                             return Request(id: d.documentID, email: d["email"] as? String ?? "gg@test.com", title: d["title"] as?String ?? "title", message: d["message"] as? String ?? "message", user: d["user"] as? String ?? "user")
                         }
                         self.table.reloadData()
-                        print(self.requests!)
                     }
                 }
             }
@@ -42,7 +40,7 @@ class EmailViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     @objc func profileButtonClicked(){
-        let ac = UIAlertController(title: "Profile", message: "Choose option:", preferredStyle: .actionSheet)
+        let ac = UIAlertController(title: "\(defaults.string(forKey: "email")!)", message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "Log out", style: .destructive){ _ in
             let ac = UIAlertController(title: "Log out", message: "Are you sure you want to log out from your account? By clicking submit you will log out from your account and your data will be saved.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "Cancel", style: .destructive))

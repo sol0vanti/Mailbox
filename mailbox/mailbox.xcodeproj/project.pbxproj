@@ -17,6 +17,7 @@
 		700B48462AEBF94700B0FBD5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B48452AEBF94700B0FBD5 /* SignUpViewController.swift */; };
 		700B48482AEBF95000B0FBD5 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B48472AEBF95000B0FBD5 /* EmailViewController.swift */; };
 		704C50F62AFACA7B003FE0A2 /* SendEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704C50F52AFACA7B003FE0A2 /* SendEmailViewController.swift */; };
+		7055D6302B0FC7DE0082D10E /* EmailDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7055D62F2B0FC7DE0082D10E /* EmailDetailCollectionViewCell.swift */; };
 		7071559B2AF41E9E0044DC9F /* EmailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071559A2AF41E9E0044DC9F /* EmailTableViewCell.swift */; };
 		7071559D2AF4201C0044DC9F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071559C2AF4201C0044DC9F /* Request.swift */; };
 		70AF61FC2AEE6EDA0018AC03 /* Helping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AF61FB2AEE6EDA0018AC03 /* Helping.swift */; };
@@ -63,6 +64,7 @@
 		700B48452AEBF94700B0FBD5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		700B48472AEBF95000B0FBD5 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		704C50F52AFACA7B003FE0A2 /* SendEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailViewController.swift; sourceTree = "<group>"; };
+		7055D62F2B0FC7DE0082D10E /* EmailDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		7071559A2AF41E9E0044DC9F /* EmailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTableViewCell.swift; sourceTree = "<group>"; };
 		7071559C2AF4201C0044DC9F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		70AF61FB2AEE6EDA0018AC03 /* Helping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helping.swift; sourceTree = "<group>"; };
@@ -185,8 +187,9 @@
 		700B48442AEBF91200B0FBD5 /* Email */ = {
 			isa = PBXGroup;
 			children = (
+				70FEB3FC2B10E48B009BAE66 /* SendEmail */,
 				707155982AF41E5D0044DC9F /* Main */,
-				704C50F52AFACA7B003FE0A2 /* SendEmailViewController.swift */,
+				70FEB3FB2B10E47F009BAE66 /* Detail */,
 			);
 			path = Email;
 			sourceTree = "<group>";
@@ -196,9 +199,25 @@
 			children = (
 				700B48472AEBF95000B0FBD5 /* EmailViewController.swift */,
 				7071559A2AF41E9E0044DC9F /* EmailTableViewCell.swift */,
-				70C9DFAC2B0E9BBC0021E51A /* EmailDetailViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		70FEB3FB2B10E47F009BAE66 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				70C9DFAC2B0E9BBC0021E51A /* EmailDetailViewController.swift */,
+				7055D62F2B0FC7DE0082D10E /* EmailDetailCollectionViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		70FEB3FC2B10E48B009BAE66 /* SendEmail */ = {
+			isa = PBXGroup;
+			children = (
+				704C50F52AFACA7B003FE0A2 /* SendEmailViewController.swift */,
+			);
+			path = SendEmail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 				700B48302AEBF28D00B0FBD5 /* LogInViewController.swift in Sources */,
 				70AF61FC2AEE6EDA0018AC03 /* Helping.swift in Sources */,
 				700B482C2AEBF28D00B0FBD5 /* AppDelegate.swift in Sources */,
+				7055D6302B0FC7DE0082D10E /* EmailDetailCollectionViewCell.swift in Sources */,
 				700B48462AEBF94700B0FBD5 /* SignUpViewController.swift in Sources */,
 				700B482E2AEBF28D00B0FBD5 /* SceneDelegate.swift in Sources */,
 				7071559B2AF41E9E0044DC9F /* EmailTableViewCell.swift in Sources */,

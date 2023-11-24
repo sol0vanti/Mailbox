@@ -25,14 +25,12 @@ class LogInViewController: UIViewController {
         let error = Helping.checkTextFields(errorLabel: errorLabel, textFields: [emailTextField, passwordTextField])
          
         guard error == nil else {
-            Helping.showError(text: error!, label: errorLabel, textFields:
-                                [emailTextField,passwordTextField])
+            Helping.showError(text: error!, label: errorLabel, textFields: [emailTextField,passwordTextField])
             return
         }
          
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-         
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
         if error != nil {
             Helping.showError(text: error!.localizedDescription, label: self.errorLabel, textFields: [self.emailTextField, self.passwordTextField])
