@@ -1,14 +1,7 @@
 > Great news! Mailbox email system is now in public beta! If this project was interesting or useful for you, star it for progression. Join us in the Mailbox today! ☁️🎉
 
-<br />
-<p align="center">
-    <br />
-    <br />
-    <h1>Mailbox Email System</h1>
-    <b>Mailbox is an innovative take on the postal service application that will help you stay accessible at all times.</b>
-    <br />
-    <br />
-</p>
+#Mailbox Email System
+Mailbox is an innovative take on the postal service application that will help you stay accessible at all times.
 
 * [Features](#Features)
 * [Authors](#Authors)
