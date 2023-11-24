@@ -77,8 +77,10 @@ This is full app design preview | 10.11.2023
 </div>
 
 ### Email
+<div align="left" style="margin: 50px;">
 <img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Email/EmailPreview.png" alt="Email">
 <img height="400" src="https://github.com/aiexxash/Mailbox/blob/main/Demo/Email/EmailDetail.png" alt="Email">
+</div>
 
 ### Send Email
 <div align="left" style="margin: 50px;">
